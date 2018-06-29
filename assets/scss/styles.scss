@@ -1,0 +1,173 @@
+/* You can add global styles to this file, and also import other style files */
+@import './vars';
+html, body { height: 100%;}
+ul{ margin: 0; padding: 0; list-style: none; }
+a:focus, a:hover { text-decoration: none;}
+body { margin: 0; font-family: 'Open Sans', sans-serif; }
+.nopadding {padding: 0;}
+.btm_padding { padding-bottom: 30px;}
+.container_custom { width:100%; height: 100%; 
+    .home_page{ width: 100%; display: flex;height: 100%;
+     .menu { background: black; transition: 2s;   width:5%; display: flex; justify-content: center; flex-direction: column; text-align: center; 
+        float: left;
+        .sidenav {
+            text-transform: uppercase;
+            height: 100%; /* 100% Full-height */
+            width: 0; /* 0 width - change this with JavaScript */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            background-color:white; /* Black*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            display: flex; justify-content: center; flex-direction: column; text-align: center;
+            ul { 
+                li {
+                    a {
+                        padding: 8px 8px 8px 8px; text-decoration: none;  font-size: 14px; color: #818181;
+                        display: inline-block; transition: 0.3s;
+                    }
+                    a.active { color:#000; }
+                }
+             }
+             ul.nav {  margin:40px 0;
+                li:hover a { color: black; background: none; }
+                     }
+             
+            ul.social { display: flex;justify-content: center; margin-bottom: 40px; 
+                    li { margin: 0 5px;
+                        a { width:25px; height:25px; font-size: 13px;  border-radius: 50%; background:black; color: white; line-height: 10px; }
+                    }        
+            }
+          
+            .closebtn { position: absolute; top:50%; right: 25px;
+                font-size: 36px; margin-left: 50px; margin-top: -25px; z-index: 9; text-decoration: none; color:black;
+            }
+        }
+        .click { text-transform: uppercase; font-size:11px;  cursor: pointer; color: white; margin:10px 0; 
+            div{width: 25px; height:2px; background-color: white;
+                margin:0 auto; margin-bottom: 6px; 
+                 }
+              }
+         #copyright { font-style: italic;  color:white; }     
+        }
+      .menu:hover { background: white; 
+        .click {color: black;
+            div { background: black;  }
+        }
+         }  
+        #main { width:95%; display: flex; transition: margin-left .5s;
+            .wide {width: 100%; display: flex;  
+                .banner { width: 28%;  
+                    color: white; background: black; /*background: url('../images/lady.png'); background-size: 100% 100%;  */
+                .overlay { background: rgba(0, 0, 0, 0.5); width:100%; height: 100%;
+                    display: flex; justify-content: center; flex-direction: column; text-align: center;   }
+                    .wrap_ban_data { margin:0 30px; 
+                        img { margin: 15px 0;  }
+                        h1{ font-size: 36px; line-height: 46px; text-transform: capitalize; margin:0;  }
+                        span { display: block; text-transform: uppercase; padding-top: 15px; padding-bottom: 15px;  }
+                        ul { display: flex; list-style: none;  justify-content: center; border-top: 1px solid #fff;padding: 10px 0; 
+                        li {
+                            a{ margin:0 8px; display: block; color:#fff; }
+                        }
+    
+                        }
+                    }
+                }
+                .title { margin-bottom:30px; text-transform: capitalize;
+                    text-align: center;    
+               span { display: inline-block; position: relative;    }
+               span:after { overflow: visible; /* For IE */
+                   padding: 0;   position: absolute;  content: "";  left: 0; border: none; border-top: medium double #333;
+                   color: #333; text-align: center; bottom: -10px;width: 100%; }
+               }
+               .gallery { width: 72%; overflow: auto; 
+                .sticky { margin-bottom: -50px; min-height: 100%; 
+                .Card { margin: 15px; text-align: center;
+                    h1 { font-family: 'Playfair Display', serif;
+                       
+                         } 
+                 img { width: 100%; height: auto;}
+                .img-thumbnail{padding: 15px; }  }
+                .grid { text-align: center;
+                    .grid-item { width:50%;  transition: width 2s;
+                    .wrap { position: relative;
+                        img { opacity: 1;  -moz-transition: all 0.3s;
+                            -webkit-transition: all 0.3s;
+                            transition: all 0.3s;
+                            backface-visibility: hidden; width:100%; height:auto; display: block;  }
+                        .pos {display: none; position: absolute; left: 0; top: 0;  width: 100%;
+                             height: 100%; z-index: 0;  
+                             a { width: 100%; height: 100%; justify-content: center;
+                                flex-direction: column; display: flex;
+                                 h3 { position: relative; z-index: 9; color: black; text-transform: uppercase;}
+                              }
+                        }
+                    }           }
+                    .wrap:hover .pos { justify-content:center; flex-direction: column; text-align: center;display: flex;   }
+                    .wrap:hover img { opacity: 0.3; /*-moz-transform: scale(1.1);
+                        -webkit-transform: scale(1.1);
+                        transform: scale(1.1);*/  }
+                }
+            }
+                .grid-item--width2 { width:100%; height: auto; }
+                .footer {  background: black; color: #fff; height: 50px;
+                    ul {
+                        li  { 
+                           > a{color: White; text-transform:capitalize;
+                                margin: 0 15px; padding: 15px 0;
+                                span.caret { border-bottom: 4px dashed; border-top: 0; }
+                            }
+                            ul {
+                                li{
+                                    a { color: black;margin: 0; padding: 3px 20px; }
+                                }
+                             }
+                            }
+                         li.dropdown { position: relative;
+                             .dropdown-menu { bottom: 100%; top: auto; min-width: 100px;
+                             }
+                             .dropdown-menu:after { position: absolute; left: 2px;
+                            content: ""; border:5px solid transparent; border-top-color:#fff; }
+                         }   
+                         li:hover a { background: none; }   
+                         li:hover ul { display: block; }
+                   
+                       }
+                       .copy {padding: 15px 0; text-transform: capitalize;  }
+                /*.footer,.push {  height: 50px;}*/
+                       
+                }
+                         } 
+             .innerpage{ overflow:auto;
+                h4 {text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    width: 90%;}    
+            }
+           
+                }
+              }
+ }
+
+}
+
+#back2Top { padding: 8px; cursor: pointer; background: #55493f; font-weight: bold; color: #fff; position: fixed; bottom: 7px; right: 23px; display: none; }
+
+
+
+.hr2 {    border: none;    border-top: medium double grey;    color: grey;  
+      overflow: visible;    text-align: center;  
+.hr2:after {    background: white;   content: "\0025C6";   display: inline-block;
+    font-size: 1.7em;   position: relative;    top: -.75em;  }
+      }
+#result {margin-bottom: 10px; }
+.red { color: red;}
+.title { margin-bottom:30px; text-transform: capitalize;
+    text-align: center;    
+span { display: inline-block; position: relative;    }
+span:after { overflow: visible; /* For IE */
+   padding: 0;   position: absolute;  content: "";  left: 0; border: none; border-top: medium double #333;
+   color: #333; text-align: center; bottom: -10px;width: 100%; }
+}

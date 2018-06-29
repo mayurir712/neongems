@@ -1,0 +1,20 @@
+@media only screen and (min-width:320px) and (max-width: 768px) {
+    .container_custom .home_page { display: block; }
+    .container_custom .home_page #main .wide { display: block; }
+    .container_custom .home_page .menu.wide_responsive { width: 100%; display: block; }
+    .container_custom .home_page #main.wide_responsive { width: 100%; display: block; }
+    .container_custom .home_page #main .wide .innerpage h4 { font-size: 14px; }
+    .container_custom .home_page #main .banner.wide_responsive { width: 100%; display: block; }
+    .container_custom .home_page #main .gallery.wide_responsive { width: 100%; display: block; }
+    .container_custom .home_page .menu .sidenav {justify-content: flex-start;padding-top: 30px; }
+    .container_custom .home_page .menu .sidenav .closebtn { top:0; margin-top: 0; }
+    .container_custom .home_page #main .wide .banner { background: none; }
+    .container_custom .home_page #main .wide .banner .wrap_ban_data {margin: 0 10px;}
+    .container_custom .home_page #main .wide .gallery footer ul li > a {padding: 5px 0;}
+    .container_custom .home_page #main .wide .gallery footer ul li > a span.caret {
+        border-top: 4px dashed;
+        border-bottom: 0;
+    }
+    
+} 
+    
